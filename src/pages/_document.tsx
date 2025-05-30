@@ -4,10 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="antialiased">
-        <div className="border-4 p-4 border-emerald-700">  
-          <Main />
-        </div>
+      <body className="h-screen antialiased bg-[image:var(--gradient-main)] bg-no-repeat text-cyan-400">
+        <Main />
         <NextScript />
       </body>
     </Html>
