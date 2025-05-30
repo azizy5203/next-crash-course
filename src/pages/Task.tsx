@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-function Task() {
+function task() {
     const [titleText, setTitleText] = useState<string>("rres");
   return (
     <>
@@ -25,4 +25,4 @@ function Task() {
   );
 }
 
-export default Task;
+export default task;
