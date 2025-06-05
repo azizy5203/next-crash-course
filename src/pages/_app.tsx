@@ -1,14 +1,11 @@
+import Layout from "@/components/layouts/Layout";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import AppBar from "@/components/AppBar";
-
+// import Layout from "@/components/layouts/Layout";
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="h-screen flex flex-col gap-4">
-      <AppBar />
-      <div className="flex-1 px-4">
+      <Layout>
         <Component {...pageProps} />
-      </div>
-    </div>
+      </Layout>
   );
 }
